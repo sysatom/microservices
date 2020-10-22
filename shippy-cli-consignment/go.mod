@@ -2,4 +2,9 @@ module ship-service-consignment
 
 go 1.14
 
-require github.com/sysatom/microservices v0.0.0-20201022075857-fc76654075ac // indirect
+require (
+	github.com/sysatom/microservices v0.0.0
+	google.golang.org/grpc v1.33.1
+)
+
+replace github.com/sysatom/microservices => ../
